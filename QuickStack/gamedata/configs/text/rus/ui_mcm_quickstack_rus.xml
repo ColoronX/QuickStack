@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+
+<!-- Nimble -->
+<string id="ui_mcm_menu_quick_stack">
+		<text>Quick Stack</text>
+	</string>
+<string id="ui_mcm_quick_stack_key_quick_stack_v">
+		<text>Сложить в Тайник</text>
+	</string>
+<string id="ui_mcm_quick_stack_key_quick_stack_b">
+		<text>Сложить в Инвентарь</text>
+	</string>	
+
+
+</string_table>
