@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <string_table>
 
-    <string id="ui_mcm_menu_quick_stack">
-        <text>Quick Stack</text>
-    </string>
-    <string id="ui_mcm_quick_stack_key_v">
-        <text>Сложить в Хранилище</text>
-    </string>
-    <string id="ui_mcm_quick_stack_key_b">
-        <text>Сложить Игроку</text>
-    </string>
-    <string id="ui_mcm_quick_stack_block_fav">
-        <text>Запретить Перемещение Избранного</text>
-    </string>
-    <string id="ui_mcm_quick_stack_block_junk">
-        <text>Запретить Перемещение Мусора</text>
-    </string>
-    
+В В В  <string id="ui_mcm_menu_quick_stack">
+В В В В В В В  <text>Quick Stack</text>
+В В В  </string>
+В В В  <string id="ui_mcm_quick_stack_key_v">
+В В В В В В В  <text>РЎР»РѕР¶РёС‚СЊ РІ РҐСЂР°РЅРёР»РёС‰Рµ</text>
+В В В  </string>
+В В В  <string id="ui_mcm_quick_stack_key_b">
+В В В В В В В  <text>РЎР»РѕР¶РёС‚СЊ РРіСЂРѕРєСѓ</text>
+В В В  </string>
+В В В  <string id="ui_mcm_quick_stack_block_fav">
+В В В В В В В  <text>Р—Р°РїСЂРµС‚РёС‚СЊ РџРµСЂРµРјРµС‰РµРЅРёРµ РР·Р±СЂР°РЅРЅРѕРіРѕ</text>
+В В В  </string>
+В В В  <string id="ui_mcm_quick_stack_block_junk">
+В В В В В В В  <text>Р—Р°РїСЂРµС‚РёС‚СЊ РџРµСЂРµРјРµС‰РµРЅРёРµ РњСѓСЃРѕСЂР°</text>
+В В В  </string>
+В В  В 
 </string_table>
