@@ -1,27 +1,33 @@
-local KEY_STORAGE_STACK_V = DIK_keys.DIK_V   -- Default key for stack (V)
-local KEY_STORAGE_STACK_B = DIK_keys.DIK_B   -- Default key for stack (B)
+-- MCM Configuration for Quick Stack
 
--- Function to initialize MCM settings
+-- Default key binding values
+local KEY_V = DIK_keys.DIK_V   -- Default key for StackToNPC (V)
+local KEY_B = DIK_keys.DIK_B   -- Default key for StackToPlayer (B)
+
 function on_mcm_load()
     return {
         id = "quick_stack",
-        sh = true,  -- Make it show
+        sh = true,  -- Show in MCM
         gr = {
             {id = "title", type = "slide", link = "ui_options_slider_player", text = "ui_mcm_menu_quick_stack", size = {512, 50}, spacing = 20},
-            {id = "key_quick_stack_v", type = "key_bind", val = 2, def = KEY_STORAGE_STACK_V,},
-            {id = "key_quick_stack_b", type = "key_bind", val = 2, def = KEY_STORAGE_STACK_B,},
+            {id = "key_v", type = "key_bind", val = 2, def = KEY_V, text = "ui_mcm_quick_stack_key_v"},
+            {id = "key_b", type = "key_bind", val = 2, def = KEY_B, text = "ui_mcm_quick_stack_key_b"},
+            {id = "block_fav", type = "check", val = 1, def = 1, text = "ui_mcm_quick_stack_block_fav"},
+            {id = "block_junk", type = "check", val = 1, def = 1, text = "ui_mcm_quick_stack_block_junk"},
         }
     }
 end
 
--- Load MCM configuration values
 function on_option_change(mcm)
     if mcm then
-        -- Update keybindings based on MCM settings
-        KEY_STORAGE_STACK_V = ui_mcm.get("quick_stack/key_quick_stack_V") or KEY_STORAGE_STACK_V
-        KEY_STORAGE_STACK_B = ui_mcm.get("quick_stack/key_quick_stack_B") or KEY_STORAGE_STACK_B
-        
-        -- Debug print to verify the changes
-        print("Updated keybindings: Z = " .. KEY_STORAGE_STACK_V .. ", B = " .. KEY_STORAGE_STACK_B)
+        KEY_V = ui_mcm.get("quick_stack/key_v") or KEY_V
+        KEY_B = ui_mcm.get("quick_stack/key_b") or KEY_B
+
+        local fav    = ui_mcm.get("quick_stack/block_fav")
+        local junk   = ui_mcm.get("quick_stack/block_junk")
+
+        print("Updated Quick Stack Keys -> V: " .. tostring(KEY_V) .. ", B: " .. tostring(KEY_B))
+        print("Block Favorites: " .. tostring(fav))
+        print("Block Junk: " .. tostring(junk))
     end
 end
